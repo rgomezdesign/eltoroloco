@@ -1,0 +1,17 @@
+node_modules/
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+.DS_Store
+.vercel
+
+# Source renders, material studies and process images (kept local; shown in the portfolio case study)
+design/
+
+# Local source files
+design/
+
+# QA screenshots
+*.qa.png
+etl-*.png
