@@ -19,7 +19,7 @@ export default function MenuCard({ item, priority = false, i = 0 }: { item: Item
             alt=""
             priority={priority}
             sizes="(max-width: 1023px) 80vw, 420px"
-            className={cutout ? "h-[82%] w-auto object-contain drop-shadow-[0_18px_24px_rgba(0,0,0,0.5)] transition-transform duration-500 ease-[var(--ease-spring)] group-hover:-rotate-3 group-hover:scale-[1.06]" : "h-full w-full object-cover"}
+            className={cutout ? "h-[76%] w-[84%] object-contain drop-shadow-[0_18px_24px_rgba(0,0,0,0.5)] transition-transform duration-500 ease-[var(--ease-spring)] group-hover:-rotate-3 group-hover:scale-[1.06]" : "h-full w-full object-cover"}
           />
         )}
         {item.badge && <span className="absolute left-4 top-4"><Badge kind={item.badge} /></span>}

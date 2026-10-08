@@ -16,7 +16,7 @@ export default function CartLines({ compact = false }: { compact?: boolean }) {
         return (
           <li key={l.key} className="flex items-center gap-4 border-b border-line py-4" style={{ animation: "rise 400ms var(--ease-out) both" }}>
             <div className={`grid shrink-0 place-items-center overflow-hidden rounded-xl bg-raised ${compact ? "h-14 w-14" : "h-16 w-16"}`}>
-              <Image src={item.photo ?? HERO} alt="" sizes="64px" className={item.photo && item.photo !== HERO ? "h-[80%] w-auto object-contain" : "h-full w-full object-cover"} />
+              <Image src={item.photo ?? HERO} alt="" sizes="64px" className={item.photo && item.photo !== HERO ? "h-[76%] w-[84%] object-contain" : "h-full w-full object-cover"} />
             </div>
             <div className="min-w-0 flex-1">
               <p className="text-sm font-semibold">{item.name}</p>

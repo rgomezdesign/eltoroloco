@@ -34,7 +34,7 @@ export default function CartPage() {
                 <div className="mt-3 grid grid-cols-2 gap-3">
                   {upsell.map((it) => (
                     <button key={it.id} type="button" onClick={() => quickAdd(it.id)} className="flex items-center gap-3 rounded-2xl bg-surface p-3 text-left transition-colors hover:bg-raised">
-                      {it.photo && <Image src={it.photo} alt="" sizes="48px" className="h-11 w-11 object-contain" />}
+                      {it.photo && <Image src={it.photo} alt="" sizes="48px" className="h-10 w-11 shrink-0 object-contain" />}
                       <span>
                         <span className="block text-xs font-semibold">{it.name}</span>
                         <span className="text-xs font-semibold text-accent">{money(it.price)}</span>
