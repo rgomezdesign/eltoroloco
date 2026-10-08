@@ -97,7 +97,7 @@ function Sheet({ item, onClose, onAdd }: { item: Item; onClose: () => void; onAd
           <div className="mx-auto mb-3 h-1 w-10 rounded-full bg-line lg:hidden" />
           <div className="relative grid h-44 place-items-center overflow-hidden rounded-2xl bg-raised lg:h-56">
             {item.photo ? (
-              <Image src={item.photo} alt="" className={item.photo === HERO ? "h-full w-full object-cover" : "h-[80%] w-[84%] object-contain drop-shadow-2xl"} sizes="560px" />
+              <Image src={item.photo} alt="" className={item.photo === HERO ? "h-full w-full object-cover" : "absolute inset-0 m-auto h-[80%] w-[84%] object-contain drop-shadow-2xl"} sizes="560px" />
             ) : (
               <Image src={HERO} alt="" className="h-full w-full object-cover" sizes="560px" />
             )}

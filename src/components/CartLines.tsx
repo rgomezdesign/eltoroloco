@@ -15,8 +15,8 @@ export default function CartLines({ compact = false }: { compact?: boolean }) {
         const summary = [lineSummary(l), l.notes ? `“${l.notes}”` : ""].filter(Boolean).join(" · ");
         return (
           <li key={l.key} className="flex items-center gap-4 border-b border-line py-4" style={{ animation: "rise 400ms var(--ease-out) both" }}>
-            <div className={`grid shrink-0 place-items-center overflow-hidden rounded-xl bg-raised ${compact ? "h-14 w-14" : "h-16 w-16"}`}>
-              <Image src={item.photo ?? HERO} alt="" sizes="64px" className={item.photo && item.photo !== HERO ? "h-[76%] w-[84%] object-contain" : "h-full w-full object-cover"} />
+            <div className={`relative grid shrink-0 place-items-center overflow-hidden rounded-xl bg-raised ${compact ? "h-14 w-14" : "h-16 w-16"}`}>
+              <Image src={item.photo ?? HERO} alt="" sizes="64px" className={item.photo && item.photo !== HERO ? "absolute inset-0 m-auto h-[76%] w-[84%] object-contain" : "h-full w-full object-cover"} />
             </div>
             <div className="min-w-0 flex-1">
               <p className="text-sm font-semibold">{item.name}</p>
