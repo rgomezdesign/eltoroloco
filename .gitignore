@@ -15,3 +15,7 @@ design/
 # QA screenshots
 *.qa.png
 etl-*.png
+
+# Local project brief for collaborators (kept off GitHub)
+PROJECT-BRIEF.md
+CLAUDE.md
